@@ -1,0 +1,512 @@
+/* ===========================
+   How It Works Page Styles
+   =========================== */
+
+html {
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+
+.how-it-works-main {
+    padding: 8rem 2rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===========================
+   Hero Section
+   =========================== */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    margin-bottom: 4rem;
+}
+
+.page-title {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, #00d4ff 0%, #8b5cf6 50%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: var(--text-secondary);
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   Pipeline Section
+   =========================== */
+.pipeline-section {
+    padding: 4rem 0;
+    position: relative;
+}
+
+.pipeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    position: relative;
+}
+
+/* Pipeline Steps */
+.pipeline-step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 2rem;
+    align-items: start;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.pipeline-step.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.step-left {
+    margin-left: 0;
+}
+
+.step-right {
+    margin-left: auto;
+    margin-right: 0;
+    direction: rtl;
+}
+
+.step-right .step-content {
+    direction: ltr;
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--accent-cyan);
+    opacity: 0.3;
+    text-align: center;
+}
+
+.step-content {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 3rem;
+    transition: all 0.3s ease;
+}
+
+.step-content:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 12px 40px rgba(0, 212, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.step-right .step-content:hover {
+    transform: translateX(-10px);
+}
+
+.step-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.step-title {
+    font-size: 2rem;
+    color: var(--accent-cyan);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.step-description {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.step-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.step-details li {
+    color: var(--text-secondary);
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.step-details li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-purple);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Step Connector */
+.step-connector {
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent-cyan) 0%, var(--accent-purple) 100%);
+    position: absolute;
+    left: 40px;
+    top: 100%;
+    opacity: 0.3;
+}
+
+.pipeline-step:last-child .step-connector {
+    display: none;
+}
+
+/* ===========================
+   Timeline Visual
+   =========================== */
+.timeline-visual {
+    position: relative;
+    padding: 6rem 0;
+    margin-top: 4rem;
+}
+
+.timeline-line {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, 
+        var(--accent-cyan) 0%, 
+        var(--accent-purple) 50%, 
+        var(--accent-cyan) 100%
+    );
+    border-radius: 2px;
+    position: relative;
+}
+
+.timeline-dots {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 0 2rem;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--glass-bg);
+    border: 3px solid var(--accent-purple);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.timeline-dot:hover {
+    transform: scale(1.5);
+    background: var(--accent-cyan);
+    box-shadow: 0 0 20px var(--accent-cyan);
+}
+
+.timeline-dot.active {
+    background: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+/* ===========================
+   ADD to about-styles.css and how-it-works-styles.css
+   =========================== */
+
+/* Formula Box */
+.formula-box {
+    background: rgba(0, 212, 255, 0.1);
+    border-left: 4px solid var(--accent-cyan);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+}
+
+.formula-box p {
+    color: var(--text-primary);
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+.formula-box strong {
+    color: var(--accent-cyan);
+}
+
+/* Architecture Section */
+.architecture-section {
+    padding: 4rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Accuracy Section */
+.accuracy-section {
+    padding: 4rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Enhanced Step Details */
+.step-details strong {
+    color: var(--accent-cyan);
+    font-weight: 600;
+}
+
+/* Logo Link for About & How It Works pages */
+.solcast-logo-link {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 1000;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.solcast-logo-link:hover .solcast-logo {
+    transform: scale(1.05);
+}
+
+.solcast-logo {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.solcast-logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Hero Image Section */
+.hero-image-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 3rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image-section .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Improved Card Text Spacing */
+.card-text + .card-text {
+    margin-top: 1rem;
+}
+
+/* Enhanced Tech Grid */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tech-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-purple);
+    transform: translateY(-3px);
+}
+
+.tech-item h4 {
+    color: var(--accent-purple);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.tech-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Contact Links Enhancement */
+.contact-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    padding: 0.8rem 2rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    border-color: var(--accent-cyan);
+    background: rgba(0, 212, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.2);
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .formula-box {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-image-section {
+        max-width: 100%;
+        margin: 2rem 0;
+    }
+}
+/* ===========================
+   CTA Section
+   =========================== */
+.cta-section {
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+    margin-top: 4rem;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.cta-section .cta-button {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-section .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 48px rgba(0, 212, 255, 0.6);
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+@media (max-width: 1024px) {
+    .pipeline-step {
+        grid-template-columns: 60px 1fr;
+    }
+    
+    .step-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .how-it-works-main {
+        padding: 6rem 1rem 2rem;
+    }
+    
+    .hero {
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+    }
+    
+    .pipeline-container {
+        gap: 4rem;
+    }
+    
+    .pipeline-step {
+        grid-template-columns: 1fr;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        direction: ltr !important;
+    }
+    
+    .step-number {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    
+    .step-content {
+        padding: 2rem;
+    }
+    
+    .step-connector {
+        display: none;
+    }
+    
+    .timeline-dots {
+        padding: 0 1rem;
+    }
+    
+    .timeline-dot {
+        width: 15px;
+        height: 15px;
+    }
+}

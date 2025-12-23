@@ -1,0 +1,447 @@
+/* ===========================
+   Global Styles & Reset
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Add to styles.css */
+.solcast-logo {
+    transition: opacity 0.3s ease;
+}
+
+.solcast-logo.fade {
+    opacity: 0;
+}
+:root {
+    --primary-dark: #0a0a0a;
+    --secondary-dark: #111111;
+    --accent-blue: #0066FF;
+    --accent-purple: #7C3AED;
+    --accent-cyan: #06b6d4;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+    --size: 20px;
+}
+
+html {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #000000;
+    color: var(--text-primary);
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ===========================
+   Animated Background (Home & Forecast)
+   =========================== */
+.animated-bg {
+    display: none;
+}
+
+.el {
+    display: none;
+}
+
+/* ===========================
+   Stars Background (About & How It Works)
+   =========================== */
+#stars, #stars2, #stars3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    animation: animStar 50s linear infinite;
+}
+
+#stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    animation: animStar 100s linear infinite;
+}
+
+#stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    animation: animStar 150s linear infinite;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+/* ===========================
+   Solcast Logo
+   =========================== */
+.solcast-logo {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 1000;
+}
+
+.solcast-logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* ===========================
+   Hero Section
+   =========================== */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem 4rem;
+    position: relative;
+}
+
+.hero-title-container {
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+
+.title-svg-main {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    pointer-events: none;
+}
+
+.svg-text {
+    font-size: 280px;
+    font-weight: 900;
+    letter-spacing: -5px;
+    font-family: 'Inter', sans-serif;
+    stroke-width: 8;
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto 2rem;
+    font-family: "Crimson Text", serif;
+}
+
+.subtitle-main,
+.subtitle-secondary {
+    font-size: clamp(1.8rem, 4vw, 3.5rem);
+    color: #eee;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subtitle-main span,
+.subtitle-secondary span {
+    white-space: pre;
+    opacity: 0;
+    transform: translate(-2px, 4px) scale(0.9);
+    filter: blur(6px);
+    animation: fadeInText 0.5s ease-out forwards;
+    display: inline-block;
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+        filter: blur(0);
+    }
+}
+
+/* Hero Navigation Links */
+.hero-nav-links {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-link {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 2px solid var(--glass-border);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hero-link:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.5);
+}
+
+/* Hero Image */
+.hero-image {
+    width: 35%;
+    max-width: 400px;
+    margin: 2rem auto 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+/* ===========================
+   Icon Strip Section
+   =========================== */
+.icon-strip-section {
+    padding: 8rem 2rem;
+    position: relative;
+}
+
+.scroll-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.icon-strip-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.icon-strip-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.card-spacer-horizontal {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.square {
+    aspect-ratio: 1;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.square:hover {
+    border-color: var(--accent-blue);
+    box-shadow: 0 8px 32px rgba(0, 102, 255, 0.3);
+    transform: translateY(-4px);
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* ===========================
+   Powerful Features Section
+   =========================== */
+.powerful-features-section {
+    padding: 4rem 2rem 8rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.features-heading {
+    text-align: center;
+    margin-bottom: 4rem;
+    overflow: hidden;
+}
+
+.features-heading p {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+    background-clip: text;
+}
+
+.split-char {
+    display: inline-block;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.feature-detail-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.feature-detail-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 12px 40px rgba(0, 212, 255, 0.2);
+}
+
+.feature-detail-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-cyan);
+}
+
+.feature-detail-card p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* ===========================
+   CTA Button
+   =========================== */
+.cta-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.cta-button {
+    padding: 1.5rem 4rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 48px rgba(0, 212, 255, 0.6);
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+@media (max-width: 1200px) {
+    .icon-strip-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .icon-strip-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-spacer-horizontal {
+        display: none;
+    }
+    
+    .hero-nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .hero-link {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .svg-text {
+        font-size: 100px;
+    }
+    
+    .subtitle-main,
+    .subtitle-secondary {
+        font-size: 1.5rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}

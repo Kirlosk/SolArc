@@ -1,0 +1,22 @@
+# Python
+aires_env/
+__pycache__/
+*.pyc
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+
+# Environment & secrets
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.pub

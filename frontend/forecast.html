@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolArc - Energy Forecasting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="forecast-styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+</head>
+<body class="forecast-page">
+    
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="el"></div>
+    </div>
+
+    <!-- Stars Background -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <!-- Solcast Logo -->
+    <div class="solcast-logo">
+        <img src="solcast-logo.png" alt="Solcast" onerror="this.style.display='none'">
+    </div>
+    
+    <!-- Logo Section -->
+    <section class="logo-section">
+        <h1 class="logo-text">SolArc</h1>
+    </section>
+
+    <!-- Choose City Section -->
+    <section class="choose-city-section">
+        <p class="choose-city-text">Choose a city</p>
+    </section>
+
+    <!-- City Search Bar -->
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" id="citySearch" class="search-input" placeholder="Search cities..." autocomplete="off">
+            <div class="search-icon">🔍</div>
+            <div class="search-dropdown" id="searchDropdown" style="display: none;"></div>
+        </div>
+    </section>
+
+    <!-- City Cards Grid -->
+    <section class="city-cards-section">
+        <div class="city-cards-grid" id="cityCardsGrid">
+            <div class="loading-spinner">Loading cities...</div>
+        </div>
+    </section>
+
+    <!-- Solar & Wind Input Windows -->
+    <section class="input-windows-section">
+        <div class="input-windows-container">
+            <!-- Solar Input Panel -->
+            <div class="input-panel glass-panel">
+                <h3 class="panel-title">☀️ Solar Inputs</h3>
+                <div class="input-group">
+                    <label for="panelArea">Area (m²)</label>
+                    <input type="number" id="panelArea" class="input-field" placeholder="100" min="1" step="0.1" value="100">
+                </div>
+                <div class="input-group">
+                    <label for="panelEfficiency">Panel Efficiency (%)</label>
+                    <input type="number" id="panelEfficiency" class="input-field" placeholder="18" value="18">
+                </div>
+            </div>
+
+            <!-- Wind Input Panel -->
+            <div class="input-panel glass-panel">
+                <h3 class="panel-title">💨 Wind Inputs</h3>
+                <div class="input-group">
+                    <label for="numWindmills">Number of Windmills</label>
+                    <input type="number" id="numWindmills" class="input-field" placeholder="1" min="1" step="1" value="1">
+                </div>
+                <div class="input-group">
+                    <label for="rotorDiameter">Rotor Diameter (m)</label>
+                    <input type="number" id="rotorDiameter" class="input-field" placeholder="80" min="1" step="0.1" value="80">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forecast Mode Selector -->
+    <section class="mode-selector-section">
+        <div class="mode-selector-container">
+            <div class="mode-option circle" data-mode="realtime">
+                <div class="mode-content">
+                    <span class="mode-icon">⚡</span>
+                    <span class="mode-label">Realtime</span>
+                </div>
+            </div>
+            <div class="mode-option circle" data-mode="7day">
+                <div class="mode-content">
+                    <span class="mode-icon">📊</span>
+                    <span class="mode-label">7-Day Forecast</span>
+                </div>
+            </div>
+            <div class="mode-option circle" data-mode="monthly">
+                <div class="mode-content">
+                    <span class="mode-icon">📅</span>
+                    <span class="mode-label">Monthly</span>
+                </div>
+            </div>
+            <div class="mode-option circle" data-mode="wind">
+                <div class="mode-content">
+                    <span class="mode-icon wind-icon">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" d="M256 0c11.046 0 20 8.954 20 20v60c0 11.046-8.954 20-20 20s-20-8.954-20-20V20c0-11.046 8.954-20 20-20zm0 412c11.046 0 20 8.954 20 20v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60c0-11.046 8.954-20 20-20zM492 256c0 11.046-8.954 20-20 20h-60c-11.046 0-20-8.954-20-20s8.954-20 20-20h60c11.046 0 20 8.954 20 20zM100 256c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20s8.954-20 20-20h60c11.046 0 20 8.954 20 20z"/>
+                        </svg>
+                    </span>
+                    <span class="mode-label">Wind</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section" id="resultsSection" style="display: none;">
+        <div class="results-container">
+            
+            <!-- Map Window -->
+            <div class="map-window glass-panel">
+                <iframe id="mapIframe" class="interactive-map" frameborder="0" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+                <div class="map-overlay">
+                    <div class="map-marker">📍</div>
+                    <p class="map-city-name" id="mapCityName">City Name</p>
+                    <p class="map-coords" id="mapCoords">Lat, Lon</p>
+                </div>
+            </div>
+
+            <!-- Result Cards Container -->
+            <div class="result-cards-container" id="resultCardsContainer"></div>
+
+            <!-- Chart Container -->
+            <div class="chart-container glass-panel" id="chartContainer" style="display: none;">
+                <h3 class="chart-title" id="chartTitle">Energy Forecast</h3>
+                <canvas id="forecastChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span id="toastMessage">Error message</span>
+    </div>
+
+    <script src="forecast.js"></script>
+</body>
+</html>

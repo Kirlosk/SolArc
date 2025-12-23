@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - SolArc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="how-it-works-styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <!-- Stars Background -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <!-- Solcast Logo -->
+    <div class="solcast-logo">
+        <img src="solcast-logo.png" alt="Solcast" onerror="this.style.display='none'">
+    </div>
+
+    <!-- Main Content -->
+    <main class="how-it-works-main">
+        <section class="hero">
+            <h1 class="page-title">How It Works</h1>
+            <p class="page-subtitle">From city selection to energy insights — SolArc's four-step forecasting pipeline</p>
+        </section>
+
+        <!-- Pipeline Steps -->
+        <section class="pipeline-section">
+            <div class="pipeline-container">
+                
+                <!-- Step 1 -->
+                <div class="pipeline-step step-left">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">🏙️</div>
+                        <h2 class="step-title">City & Mode Selection</h2>
+                        <p class="step-description">
+                            [Placeholder: Describe how users begin by selecting one of 240+ cities across Karnataka. Explain the forecasting modes—Realtime, 7-Day, and Monthly. Mention the input parameters: panel area (m²) for solar or rotor diameter (m) and number of windmills for wind predictions.]
+                        </p>
+                        <ul class="step-details">
+                            <li>240+ cities with precise lat/lon coordinates</li>
+                            <li>Four forecasting modes: Realtime, 7-Day, Monthly, Wind</li>
+                            <li>Customizable input parameters for solar and wind systems</li>
+                        </ul>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="pipeline-step step-right">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">🌤️</div>
+                        <h2 class="step-title">Weather Fetch</h2>
+                        <p class="step-description">
+                            [Placeholder: Explain how SolArc queries the Open-Meteo API using the selected city's coordinates. Detail the weather parameters retrieved: POA direct irradiance, POA diffuse irradiance, ground-reflected radiation, ambient temperature, and wind speed. Emphasize real-time accuracy.]
+                        </p>
+                        <ul class="step-details">
+                            <li>Real-time weather data from Open-Meteo API</li>
+                            <li>POA direct, diffuse, and ground-reflected irradiance</li>
+                            <li>Temperature, wind speed, and atmospheric conditions</li>
+                            <li>High-resolution data for accurate forecasting</li>
+                        </ul>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="pipeline-step step-left">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">🤖</div>
+                        <h2 class="step-title">Model Inference</h2>
+                        <p class="step-description">
+                            [Placeholder: Describe the city-to-model mapping logic. Each city is assigned to Karwar (coastal), Hassan (central), or Bengaluru (urban). Explain how these pre-trained ML models process weather inputs to predict energy output.]
+                        </p>
+                        <ul class="step-details">
+                            <li>Three region-specific ML models: Karwar, Hassan, Bengaluru</li>
+                            <li>Automatic city-to-model assignment based on climate</li>
+                            <li>Models trained on historical weather and energy data</li>
+                            <li>Optimized for coastal, central, and urban patterns</li>
+                        </ul>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="pipeline-step step-right">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon">⚡</div>
+                        <h2 class="step-title">Energy Metrics</h2>
+                        <p class="step-description">
+                            [Placeholder: Explain the final output: Energy per m² (kWh/m²) and total Energy (kWh) calculated by multiplying energy density by the user's specified area. Describe how results are presented with charts and summaries.]
+                        </p>
+                        <ul class="step-details">
+                            <li>Energy per m² based on irradiance and model predictions</li>
+                            <li>Total energy output scaled by user-defined area</li>
+                            <li>Visual forecasts: line charts, peak day highlights</li>
+                            <li>Full diagnostic context: coordinates, model, weather</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Visual Timeline -->
+        <section class="timeline-visual">
+            <div class="timeline-line"></div>
+            <div class="timeline-dots">
+                <div class="timeline-dot active" data-step="1"></div>
+                <div class="timeline-dot" data-step="2"></div>
+                <div class="timeline-dot" data-step="3"></div>
+                <div class="timeline-dot" data-step="4"></div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Ready to Experience the Pipeline?</h2>
+            <p>Start forecasting renewable energy for your location</p>
+            <a href="forecast.html" class="cta-button">Start Forecasting</a>
+        </section>
+    </main>
+
+    <script src="how-it-works.js"></script>
+</body>
+</html>

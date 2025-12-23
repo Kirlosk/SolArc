@@ -1,0 +1,442 @@
+/* ===========================
+   Fix Scrolling Issue
+   =========================== */
+html {
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.about-main,
+.how-it-works-main {
+    position: relative;
+    z-index: 1;
+    overflow-y: visible;
+}
+
+.background-animation {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+/* ===========================
+   Animated SVG Background
+   =========================== */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.bg-path {
+    animation: fadeInOut 10s ease-in-out infinite;
+}
+
+.moving-circle {
+    animation: fadeInOut 10s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 0.6; }
+}
+/* ===========================
+   About Page Styles
+   =========================== */
+
+.about-main {
+    padding: 8rem 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   Hero Section
+   =========================== */
+.about-hero {
+    text-align: center;
+    padding: 4rem 0;
+    margin-bottom: 4rem;
+}
+
+.page-title {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, #00d4ff 0%, #8b5cf6 50%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: var(--text-secondary);
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   Content Section
+   =========================== */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.about-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 3rem;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 12px 40px rgba(0, 212, 255, 0.2);
+}
+
+.about-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 2rem;
+    color: var(--accent-cyan);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card-text {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* ===========================
+   Technology Grid
+   =========================== */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tech-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-purple);
+}
+
+.tech-item h4 {
+    color: var(--accent-purple);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.tech-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ===========================
+   Contact Links
+   =========================== */
+.contact-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    padding: 0.8rem 2rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    border-color: var(--accent-cyan);
+    background: rgba(0, 212, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.2);
+}
+
+/* ===========================
+   CTA Section
+   =========================== */
+.cta-section {
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+    margin-top: 4rem;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.cta-section .cta-button {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-section .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 48px rgba(0, 212, 255, 0.6);
+}
+/* ===========================
+   ADD to about-styles.css and how-it-works-styles.css
+   =========================== */
+
+/* Formula Box */
+.formula-box {
+    background: rgba(0, 212, 255, 0.1);
+    border-left: 4px solid var(--accent-cyan);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+}
+
+.formula-box p {
+    color: var(--text-primary);
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+.formula-box strong {
+    color: var(--accent-cyan);
+}
+
+/* Architecture Section */
+.architecture-section {
+    padding: 4rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Accuracy Section */
+.accuracy-section {
+    padding: 4rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Enhanced Step Details */
+.step-details strong {
+    color: var(--accent-cyan);
+    font-weight: 600;
+}
+
+/* Logo Link for About & How It Works pages */
+.solcast-logo-link {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 1000;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.solcast-logo-link:hover .solcast-logo {
+    transform: scale(1.05);
+}
+
+.solcast-logo {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.solcast-logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Hero Image Section */
+.hero-image-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 3rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image-section .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Improved Card Text Spacing */
+.card-text + .card-text {
+    margin-top: 1rem;
+}
+
+/* Enhanced Tech Grid */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tech-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-purple);
+    transform: translateY(-3px);
+}
+
+.tech-item h4 {
+    color: var(--accent-purple);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.tech-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Contact Links Enhancement */
+.contact-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    padding: 0.8rem 2rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    border-color: var(--accent-cyan);
+    background: rgba(0, 212, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.2);
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .formula-box {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-image-section {
+        max-width: 100%;
+        margin: 2rem 0;
+    }
+}
+/* ===========================
+   Responsive Design
+   =========================== */
+@media (max-width: 768px) {
+    .about-main {
+        padding: 6rem 1rem 2rem;
+    }
+    
+    .about-hero {
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+    }
+    
+    .about-card {
+        padding: 2rem;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}

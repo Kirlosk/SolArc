@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SolArc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <!-- Stars Background -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <!-- Solcast Logo - Clickable with Fade -->
+    <a href="index.html" class="solcast-logo-link">
+        <div class="solcast-logo">
+            <img src="solcast-logo.png" alt="Solcast" onerror="this.style.display='none'">
+        </div>
+    </a>
+
+    <!-- Main Content -->
+    <main class="about-main">
+        <section class="about-hero">
+            <h1 class="page-title">About SolArc</h1>
+            <p class="page-subtitle">Powering India's renewable energy future with intelligent forecasting</p>
+        </section>
+
+        <section class="about-content">
+            <!-- Mission Section -->
+            <div class="about-card fade-in-section">
+                <div class="card-icon">🎯</div>
+                <h2 class="card-title">Our Mission</h2>
+                <p class="card-text">
+                    SolArc is dedicated to accelerating India's transition to renewable energy through accurate, accessible forecasting technology. We empower grid operators, plant managers, and policymakers with the insights needed for optimal energy planning and dispatch. Our mission is to bridge the gap between renewable energy potential and practical implementation by providing reliable, data-driven predictions that enable better decision-making in the energy sector.
+                </p>
+                <p class="card-text">
+                    By combining advanced machine learning with real-time weather data, we help stakeholders maximize the efficiency of solar and wind installations, reduce grid instability, and accelerate the adoption of clean energy across Karnataka and beyond.
+                </p>
+            </div>
+
+            <!-- Technology Stack Section -->
+            <div class="about-card fade-in-section">
+                <div class="card-icon">⚙️</div>
+                <h2 class="card-title">Technology Stack</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <h4>Backend Framework</h4>
+                        <p>FastAPI powers our high-performance REST API, delivering predictions with minimal latency and automatic API documentation.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Machine Learning</h4>
+                        <p>XGBoost regression models trained on three specialized regions (Karwar, Hassan, Bengaluru) with climate-specific features for maximum accuracy.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Weather Integration</h4>
+                        <p>Open-Meteo API provides real-time POA irradiance, temperature, and wind speed data at high spatial resolution across 240+ cities.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Frontend Technologies</h4>
+                        <p>Modern HTML5, CSS3, and JavaScript with Anime.js animations, Chart.js visualizations, and responsive design for seamless user experience.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Solar Position Calculation</h4>
+                        <p>NOAA solar position algorithm computes real-time solar elevation angles for accurate irradiance predictions.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Data Processing</h4>
+                        <p>StandardScaler normalization, feature engineering with ground-reflected POA, and regional model assignment for optimal performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why SolArc for India Section -->
+            <div class="about-card fade-in-section">
+                <div class="card-icon">🇮🇳</div>
+                <h2 class="card-title">Why SolArc for India</h2>
+                <p class="card-text">
+                    India stands at a critical juncture in its energy transition. With ambitious targets to achieve 500 GW of renewable energy capacity by 2030 and net-zero emissions by 2070, accurate forecasting has become essential. Karnataka, as one of India's renewable energy leaders, presents unique challenges with its diverse climate zones—from the humid coastal regions of Karwar to the urban heat island effects of Bengaluru and the moderate central plains around Hassan.
+                </p>
+                <p class="card-text">
+                    SolArc addresses these challenges through region-specific modeling. Our three specialized models capture the distinct weather patterns and solar characteristics of coastal, urban, and central Karnataka. As solar and wind capacity expands across India, grid stability becomes increasingly dependent on accurate production forecasts. Traditional methods fail to account for micro-climate variations, leading to costly imbalances and curtailment.
+                </p>
+                <p class="card-text">
+                    By providing hourly, daily, and multi-day forecasts for 240+ cities, SolArc enables better energy trading, optimal dispatch scheduling, and improved grid integration. Our system helps reduce India's reliance on fossil fuel backup, minimize renewable energy waste, and accelerate the country's path to energy independence and climate goals.
+                </p>
+            </div>
+
+            <!-- Model Architecture Section -->
+            <div class="about-card fade-in-section">
+                <div class="card-icon">🤖</div>
+                <h2 class="card-title">Model Architecture & Performance</h2>
+                <p class="card-text">
+                    SolArc employs XGBoost gradient-boosted regression trees optimized for renewable energy forecasting. Our system uses three region-specific models trained on historical weather data and solar production patterns:
+                </p>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <h4>Karwar Model (Coastal)</h4>
+                        <p>Trained for high-humidity coastal regions with monsoon patterns. Handles variable cloud cover and sea breeze effects on solar irradiance.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Hassan Model (Central)</h4>
+                        <p>Optimized for moderate climate zones with stable weather patterns. Captures agricultural region characteristics and seasonal variations.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Bengaluru Model (Urban)</h4>
+                        <p>Accounts for urban heat island effects, air pollution impacts, and metropolitan weather patterns affecting solar generation.</p>
+                    </div>
+                </div>
+                <p class="card-text">
+                    Each model uses six key features: POA ground-reflected irradiance, solar elevation angle, ambient temperature, wind speed, latitude, and longitude. StandardScaler normalization ensures consistent predictions across different magnitudes. The models predict irradiance (W/m²), which is then converted to energy output (kWh) based on panel area and efficiency.
+                </p>
+            </div>
+
+            <!-- Coverage Section -->
+            <div class="about-card fade-in-section">
+                <div class="card-icon">🗺️</div>
+                <h2 class="card-title">Comprehensive Coverage</h2>
+                <p class="card-text">
+                    SolArc provides forecasting services for 240+ cities across Karnataka, covering all major urban centers, industrial zones, and emerging renewable energy hubs. Our intelligent city-to-model assignment ensures each location uses the most appropriate climate model for accurate predictions.
+                </p>
+                <p class="card-text">
+                    From major cities like Bengaluru, Mysuru, Mangaluru, and Hubballi to smaller towns across coastal, central, and northern regions, our system delivers consistent, reliable forecasts. This extensive coverage enables state-wide energy planning, regional grid optimization, and localized renewable energy project assessment.
+                </p>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="hero-image-section fade-in-section">
+                <img src="renewable-energy.jpg" alt="Solar and Wind Energy" class="hero-image">
+            </div>
+
+            <!-- Team Section - Updated with Your Info -->
+            <div class="about-card fade-in-section">
+                <div class="card-icon">👥</div>
+                <h2 class="card-title">Our Team</h2>
+                <p class="card-text">
+                    SolArc was created by me, a passionate beginner machine learning engineer committed to making a meaningful impact on India's sustainable development. As an emerging professional in the field of AI and renewable energy, Aditya combines technical curiosity with a deep concern for India's energy future.
+                </p>
+                <p class="card-text">
+                    Starting this journey as a learning experience, Aditya recognized the critical need for accessible, accurate renewable energy forecasting tools in India. SolArc represents not just a technical project, but a contribution to India's ambitious renewable energy targets and climate commitments. By applying machine learning to real-world energy challenges, this project aims to bridge the gap between academic knowledge and practical solutions that can accelerate India's clean energy transition.
+                </p>
+                <p class="card-text">
+                    This project embodies the belief that even beginners in the field can contribute meaningfully to solving complex problems. Through continuous learning, experimentation, and dedication to India's sustainable development, SolArc demonstrates how technology can be harnessed for environmental and social good. The goal is to grow alongside this platform, expanding both technical capabilities and real-world impact in the renewable energy sector.
+                </p>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="about-card fade-in-section">
+                <div class="card-icon">🌱</div>
+                <h2 class="card-title">Environmental Impact</h2>
+                <p class="card-text">
+                    Accurate renewable energy forecasting plays a crucial role in reducing carbon emissions. By enabling grid operators to better integrate solar and wind power, SolArc helps minimize the need for fossil fuel backup generation. Every percentage point improvement in forecast accuracy translates to reduced curtailment, better energy trading decisions, and more efficient grid operations.
+                </p>
+                <p class="card-text">
+                    For Karnataka alone, improved forecasting can help avoid thousands of tons of CO₂ emissions annually by maximizing renewable energy utilization and reducing reliance on coal-based peaking plants. As India scales its renewable capacity, tools like SolArc become essential infrastructure for achieving climate targets while maintaining grid reliability.
+                </p>
+            </div>
+
+            <!-- Contact Section - Updated with Real Info -->
+            <div class="about-card fade-in-section">
+                <div class="card-icon">📧</div>
+                <h2 class="card-title">Get in Touch</h2>
+                <p class="card-text">
+                    We're always looking to collaborate with renewable energy stakeholders, grid operators, research institutions, and technology partners. Whether you're interested in deploying SolArc for your operations, contributing to development, or exploring research opportunities, feel free to reach out.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:kirloskaraditya1@gmail.com" class="contact-link">📧 Email</a>
+                    <a href="https://www.linkedin.com/in/kirloskar-aditya/" target="_blank" class="contact-link">💼 LinkedIn</a>
+                    <a href="https://github.com/Kirlosk" target="_blank" class="contact-link">💻 GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Ready to Forecast?</h2>
+            <p>Start predicting renewable energy output for 240+ cities across Karnataka</p>
+            <a href="forecast.html" class="cta-button">Start Predicting</a>
+        </section>
+    </main>
+
+    <script src="about.js"></script>
+</body>
+</html>

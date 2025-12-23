@@ -1,0 +1,1207 @@
+{
+  "Afzalpur": {
+    "model": "hassan",
+    "lat": 17.19986,
+    "lon": 76.36018
+  },
+  "Ajjampur": {
+    "model": "hassan",
+    "lat": 13.72794,
+    "lon": 76.0068
+  },
+  "Aland": {
+    "model": "hassan",
+    "lat": 17.56425,
+    "lon": 76.56854
+  },
+  "Alnavar": {
+    "model": "karwar",
+    "lat": 15.42727,
+    "lon": 74.74111
+  },
+  "Alur": {
+    "model": "hassan",
+    "lat": 12.97805,
+    "lon": 75.99094
+  },
+  "Anekal": {
+    "model": "bengaluru",
+    "lat": 12.7111,
+    "lon": 77.69557
+  },
+  "Ankola": {
+    "model": "karwar",
+    "lat": 14.66049,
+    "lon": 74.3047
+  },
+  "Annigeri": {
+    "model": "karwar",
+    "lat": 15.42513,
+    "lon": 75.4335
+  },
+  "Arkalgud": {
+    "model": "hassan",
+    "lat": 12.76171,
+    "lon": 76.06035
+  },
+  "Arsikere": {
+    "model": "hassan",
+    "lat": 13.31446,
+    "lon": 76.25704
+  },
+  "Athni": {
+    "model": "karwar",
+    "lat": 16.72613,
+    "lon": 75.06421
+  },
+  "Aurad": {
+    "model": "bengaluru",
+    "lat": 18.25397,
+    "lon": 77.41761
+  },
+  "Badami": {
+    "model": "karwar",
+    "lat": 15.91495,
+    "lon": 75.67683
+  },
+  "Bagalkot": {
+    "model": "karwar",
+    "lat": 16.18,
+    "lon": 75.69
+  },
+  "Bagepalli": {
+    "model": "bengaluru",
+    "lat": 13.78338,
+    "lon": 77.79667
+  },
+  "Bail-Hongal": {
+    "model": "karwar",
+    "lat": 15.8137,
+    "lon": 74.85895
+  },
+  "Ballari": {
+    "model": "hassan",
+    "lat": 15.15,
+    "lon": 76.55
+  },
+  "Ballary": {
+    "model": "bengaluru",
+    "lat": 15.14205,
+    "lon": 76.92398
+  },
+  "Banavar": {
+    "model": "hassan",
+    "lat": 13.41029,
+    "lon": 76.16314
+  },
+  "Bangalore": {
+    "model": "bengaluru",
+    "lat": 13.0,
+    "lon": 77.58333
+  },
+  "Bangarapet": {
+    "model": "bengaluru",
+    "lat": 12.99116,
+    "lon": 78.17804
+  },
+  "Bannur": {
+    "model": "bengaluru",
+    "lat": 12.33295,
+    "lon": 76.86201
+  },
+  "Bantval": {
+    "model": "hassan",
+    "lat": 12.8905,
+    "lon": 75.03489
+  },
+  "Basavakalyan": {
+    "model": "bengaluru",
+    "lat": 17.87445,
+    "lon": 76.94972
+  },
+  "Basavana": {
+    "model": "hassan",
+    "lat": 16.57278,
+    "lon": 75.97252
+  },
+  "Belagavi": {
+    "model": "karwar",
+    "lat": 16.33333,
+    "lon": 74.75
+  },
+  "Belluru": {
+    "model": "hassan",
+    "lat": 12.9814,
+    "lon": 76.73308
+  },
+  "Beltangadi": {
+    "model": "hassan",
+    "lat": 13.98333,
+    "lon": 75.3
+  },
+  "Belur": {
+    "model": "hassan",
+    "lat": 13.16558,
+    "lon": 75.86519
+  },
+  "Bengaluru": {
+    "model": "bengaluru",
+    "lat": 12.97194,
+    "lon": 77.59369
+  },
+  "Bhadravati": {
+    "model": "hassan",
+    "lat": 13.84846,
+    "lon": 75.70502
+  },
+  "Bhalki": {
+    "model": "bengaluru",
+    "lat": 18.04348,
+    "lon": 77.206
+  },
+  "Bhatkal": {
+    "model": "karwar",
+    "lat": 13.98534,
+    "lon": 74.55531
+  },
+  "Bidar": {
+    "model": "bengaluru",
+    "lat": 18.08333,
+    "lon": 77.33333
+  },
+  "Bilgi": {
+    "model": "karwar",
+    "lat": 16.34714,
+    "lon": 75.61804
+  },
+  "Birur": {
+    "model": "hassan",
+    "lat": 13.59723,
+    "lon": 75.97167
+  },
+  "Byadgi": {
+    "model": "hassan",
+    "lat": 14.67325,
+    "lon": 75.4868
+  },
+  "Byndoor": {
+    "model": "karwar",
+    "lat": 13.86667,
+    "lon": 74.63333
+  },
+  "Canacona": {
+    "model": "karwar",
+    "lat": 14.9959,
+    "lon": 74.05056
+  },
+  "Challakere": {
+    "model": "hassan",
+    "lat": 14.318,
+    "lon": 76.65165
+  },
+  "Chamrajnagar": {
+    "model": "bengaluru",
+    "lat": 11.96,
+    "lon": 77.09
+  },
+  "Channagiri": {
+    "model": "hassan",
+    "lat": 14.02399,
+    "lon": 75.92577
+  },
+  "Channapatna": {
+    "model": "bengaluru",
+    "lat": 12.65143,
+    "lon": 77.20672
+  },
+  "Channarayapatna": {
+    "model": "hassan",
+    "lat": 12.90642,
+    "lon": 76.38775
+  },
+  "Chik": {
+    "model": "bengaluru",
+    "lat": 13.43512,
+    "lon": 77.72787
+  },
+  "Chikkaballapur": {
+    "model": "bengaluru",
+    "lat": 13.55,
+    "lon": 77.87
+  },
+  "Chikkamagaluru": {
+    "model": "hassan",
+    "lat": 13.49,
+    "lon": 75.73
+  },
+  "Chiknayakanhalli": {
+    "model": "hassan",
+    "lat": 13.41609,
+    "lon": 76.62063
+  },
+  "Chikodi": {
+    "model": "karwar",
+    "lat": 16.42898,
+    "lon": 74.58591
+  },
+  "Chincholi": {
+    "model": "bengaluru",
+    "lat": 17.46508,
+    "lon": 77.41874
+  },
+  "Chintamani": {
+    "model": "bengaluru",
+    "lat": 13.40051,
+    "lon": 78.05172
+  },
+  "Chitapur": {
+    "model": "bengaluru",
+    "lat": 17.12357,
+    "lon": 77.0824
+  },
+  "Chitradurga": {
+    "model": "hassan",
+    "lat": 14.2,
+    "lon": 76.5
+  },
+  "Closepet": {
+    "model": "bengaluru",
+    "lat": 12.72181,
+    "lon": 77.28149
+  },
+  "Coondapoor": {
+    "model": "karwar",
+    "lat": 13.63126,
+    "lon": 74.6902
+  },
+  "Dakshina": {
+    "model": "hassan",
+    "lat": 12.84,
+    "lon": 75.29
+  },
+  "Dandeli": {
+    "model": "karwar",
+    "lat": 15.26667,
+    "lon": 74.61667
+  },
+  "Davanagere": {
+    "model": "hassan",
+    "lat": 14.43,
+    "lon": 75.9
+  },
+  "Devanhalli": {
+    "model": "bengaluru",
+    "lat": 13.24655,
+    "lon": 77.71183
+  },
+  "Dharwad": {
+    "model": "karwar",
+    "lat": 15.37,
+    "lon": 75.14
+  },
+  "Dod": {
+    "model": "bengaluru",
+    "lat": 13.29452,
+    "lon": 77.53777
+  },
+  "French": {
+    "model": "hassan",
+    "lat": 12.50094,
+    "lon": 76.67416
+  },
+  "Gadag": {
+    "model": "karwar",
+    "lat": 15.49835,
+    "lon": 75.65187
+  },
+  "Gadag-Betageri": {
+    "model": "karwar",
+    "lat": 15.4167,
+    "lon": 75.6167
+  },
+  "Gajendragarh": {
+    "model": "hassan",
+    "lat": 15.73628,
+    "lon": 75.96976
+  },
+  "Gangawati": {
+    "model": "hassan",
+    "lat": 15.4313,
+    "lon": 76.52933
+  },
+  "Gangolli": {
+    "model": "karwar",
+    "lat": 13.65024,
+    "lon": 74.67072
+  },
+  "Gokak": {
+    "model": "karwar",
+    "lat": 16.16901,
+    "lon": 74.82393
+  },
+  "Gokarna": {
+    "model": "karwar",
+    "lat": 14.55,
+    "lon": 74.31667
+  },
+  "Goribidnur": {
+    "model": "bengaluru",
+    "lat": 13.61072,
+    "lon": 77.51738
+  },
+  "Gorur": {
+    "model": "hassan",
+    "lat": 12.82297,
+    "lon": 76.06463
+  },
+  "Gubbi": {
+    "model": "bengaluru",
+    "lat": 13.31216,
+    "lon": 76.94102
+  },
+  "Gudibanda": {
+    "model": "bengaluru",
+    "lat": 13.67099,
+    "lon": 77.70414
+  },
+  "Guledagudda": {
+    "model": "karwar",
+    "lat": 16.05025,
+    "lon": 75.78997
+  },
+  "Gundlup\u0113t": {
+    "model": "hassan",
+    "lat": 11.81004,
+    "lon": 76.69027
+  },
+  "Gurmatkal": {
+    "model": "bengaluru",
+    "lat": 16.86773,
+    "lon": 77.39088
+  },
+  "Hadagalli": {
+    "model": "hassan",
+    "lat": 15.02048,
+    "lon": 75.93185
+  },
+  "Haliyal": {
+    "model": "karwar",
+    "lat": 15.32864,
+    "lon": 74.75638
+  },
+  "Hampi": {
+    "model": "hassan",
+    "lat": 15.3352,
+    "lon": 76.4603
+  },
+  "Hangal": {
+    "model": "karwar",
+    "lat": 14.76465,
+    "lon": 75.1246
+  },
+  "Harihar": {
+    "model": "hassan",
+    "lat": 14.51288,
+    "lon": 75.80716
+  },
+  "Harpanahalli": {
+    "model": "hassan",
+    "lat": 14.78766,
+    "lon": 75.98863
+  },
+  "Hassan": {
+    "model": "hassan",
+    "lat": 12.95,
+    "lon": 76.08333
+  },
+  "Haveri": {
+    "model": "karwar",
+    "lat": 14.73732,
+    "lon": 75.41062
+  },
+  "Heggadadevankote": {
+    "model": "hassan",
+    "lat": 12.08809,
+    "lon": 76.32957
+  },
+  "Hirekerur": {
+    "model": "hassan",
+    "lat": 14.45506,
+    "lon": 75.3952
+  },
+  "Hiriyur": {
+    "model": "hassan",
+    "lat": 13.94455,
+    "lon": 76.61723
+  },
+  "Holalkere": {
+    "model": "hassan",
+    "lat": 14.04295,
+    "lon": 76.18496
+  },
+  "Hole": {
+    "model": "hassan",
+    "lat": 12.78635,
+    "lon": 76.24331
+  },
+  "Homnabad": {
+    "model": "bengaluru",
+    "lat": 17.77074,
+    "lon": 77.12519
+  },
+  "Honavar": {
+    "model": "karwar",
+    "lat": 14.28088,
+    "lon": 74.44497
+  },
+  "Honnali": {
+    "model": "hassan",
+    "lat": 14.23976,
+    "lon": 75.64507
+  },
+  "Hosanagara": {
+    "model": "karwar",
+    "lat": 13.91387,
+    "lon": 75.06503
+  },
+  "Hosangadi": {
+    "model": "karwar",
+    "lat": 13.69756,
+    "lon": 74.95427
+  },
+  "Hosdurga": {
+    "model": "hassan",
+    "lat": 13.79631,
+    "lon": 76.28408
+  },
+  "Hoskote": {
+    "model": "bengaluru",
+    "lat": 13.0707,
+    "lon": 77.79814
+  },
+  "Hospet": {
+    "model": "hassan",
+    "lat": 15.26954,
+    "lon": 76.3871
+  },
+  "Hubballi": {
+    "model": "karwar",
+    "lat": 15.34776,
+    "lon": 75.13378
+  },
+  "Hukeri": {
+    "model": "karwar",
+    "lat": 16.23082,
+    "lon": 74.60244
+  },
+  "Hungund": {
+    "model": "hassan",
+    "lat": 16.06213,
+    "lon": 76.0586
+  },
+  "Hunsur": {
+    "model": "hassan",
+    "lat": 12.30359,
+    "lon": 76.29275
+  },
+  "Ilkal": {
+    "model": "hassan",
+    "lat": 15.95923,
+    "lon": 76.11351
+  },
+  "Indi": {
+    "model": "karwar",
+    "lat": 17.17735,
+    "lon": 75.9526
+  },
+  "Jagalur": {
+    "model": "hassan",
+    "lat": 14.51957,
+    "lon": 76.33915
+  },
+  "Jamkhandi": {
+    "model": "karwar",
+    "lat": 16.50461,
+    "lon": 75.29146
+  },
+  "Jevargi": {
+    "model": "hassan",
+    "lat": 17.01394,
+    "lon": 76.77317
+  },
+  "Kadur": {
+    "model": "hassan",
+    "lat": 13.55285,
+    "lon": 76.01164
+  },
+  "Kalaburgi": {
+    "model": "bengaluru",
+    "lat": 17.16667,
+    "lon": 77.08333
+  },
+  "Kalghatgi": {
+    "model": "karwar",
+    "lat": 15.18315,
+    "lon": 74.97099
+  },
+  "Kampli": {
+    "model": "hassan",
+    "lat": 15.40626,
+    "lon": 76.60013
+  },
+  "Kankanhalli": {
+    "model": "bengaluru",
+    "lat": 12.54654,
+    "lon": 77.42005
+  },
+  "Karkala": {
+    "model": "hassan",
+    "lat": 13.21428,
+    "lon": 74.99234
+  },
+  "Karwar": {
+    "model": "karwar",
+    "lat": 14.81361,
+    "lon": 74.12972
+  },
+  "Kavalur": {
+    "model": "hassan",
+    "lat": 15.28829,
+    "lon": 75.9433
+  },
+  "Kerur": {
+    "model": "karwar",
+    "lat": 16.01384,
+    "lon": 75.54631
+  },
+  "Khanapur": {
+    "model": "karwar",
+    "lat": 15.63969,
+    "lon": 74.50847
+  },
+  "Kodagu": {
+    "model": "hassan",
+    "lat": 12.41667,
+    "lon": 75.75
+  },
+  "Kodigenahalli": {
+    "model": "bengaluru",
+    "lat": 13.72136,
+    "lon": 77.38629
+  },
+  "Kodlipet": {
+    "model": "hassan",
+    "lat": 12.80087,
+    "lon": 75.88662
+  },
+  "Kolar": {
+    "model": "bengaluru",
+    "lat": 13.13,
+    "lon": 78.23
+  },
+  "Kollegal": {
+    "model": "bengaluru",
+    "lat": 12.15449,
+    "lon": 77.11051
+  },
+  "Konanur": {
+    "model": "hassan",
+    "lat": 12.63016,
+    "lon": 76.05037
+  },
+  "Konnur": {
+    "model": "karwar",
+    "lat": 16.20138,
+    "lon": 74.74886
+  },
+  "Koppa": {
+    "model": "hassan",
+    "lat": 13.53044,
+    "lon": 75.36329
+  },
+  "Koppal": {
+    "model": "hassan",
+    "lat": 15.5,
+    "lon": 76.2
+  },
+  "Koratagere": {
+    "model": "bengaluru",
+    "lat": 13.522,
+    "lon": 77.2373
+  },
+  "Kotturu": {
+    "model": "hassan",
+    "lat": 14.82442,
+    "lon": 76.22005
+  },
+  "Krishnarajpet": {
+    "model": "hassan",
+    "lat": 12.66621,
+    "lon": 76.4877
+  },
+  "Kudachi": {
+    "model": "karwar",
+    "lat": 16.62784,
+    "lon": 74.85408
+  },
+  "Kudligi": {
+    "model": "hassan",
+    "lat": 14.905,
+    "lon": 76.38527
+  },
+  "Kumsi": {
+    "model": "hassan",
+    "lat": 14.05455,
+    "lon": 75.39992
+  },
+  "Kumta": {
+    "model": "karwar",
+    "lat": 14.42853,
+    "lon": 74.4189
+  },
+  "Kundgol": {
+    "model": "karwar",
+    "lat": 15.25612,
+    "lon": 75.24735
+  },
+  "Kunigal": {
+    "model": "bengaluru",
+    "lat": 13.02319,
+    "lon": 77.02518
+  },
+  "Kurgunta": {
+    "model": "bengaluru",
+    "lat": 17.19321,
+    "lon": 77.35772
+  },
+  "Kushalnagar": {
+    "model": "hassan",
+    "lat": 12.45795,
+    "lon": 75.95904
+  },
+  "Kushtagi": {
+    "model": "hassan",
+    "lat": 15.75623,
+    "lon": 76.19112
+  },
+  "Lakshmeshwar": {
+    "model": "karwar",
+    "lat": 15.12689,
+    "lon": 75.46935
+  },
+  "Lingsugur": {
+    "model": "hassan",
+    "lat": 16.15876,
+    "lon": 76.52174
+  },
+  "Londa": {
+    "model": "karwar",
+    "lat": 15.46907,
+    "lon": 74.51906
+  },
+  "Maddagiri": {
+    "model": "bengaluru",
+    "lat": 13.66035,
+    "lon": 77.21239
+  },
+  "Maddur": {
+    "model": "bengaluru",
+    "lat": 12.58283,
+    "lon": 77.04294
+  },
+  "Madikeri": {
+    "model": "hassan",
+    "lat": 12.42602,
+    "lon": 75.7382
+  },
+  "Magadi": {
+    "model": "bengaluru",
+    "lat": 12.95706,
+    "lon": 77.22374
+  },
+  "Mahalingpur": {
+    "model": "karwar",
+    "lat": 16.3888,
+    "lon": 75.10873
+  },
+  "Malavalli": {
+    "model": "bengaluru",
+    "lat": 12.38556,
+    "lon": 77.06045
+  },
+  "Malpe": {
+    "model": "karwar",
+    "lat": 13.34962,
+    "lon": 74.70394
+  },
+  "Malur": {
+    "model": "bengaluru",
+    "lat": 13.00322,
+    "lon": 77.93798
+  },
+  "Mandya": {
+    "model": "bengaluru",
+    "lat": 12.5223,
+    "lon": 76.89746
+  },
+  "Mangaluru": {
+    "model": "hassan",
+    "lat": 12.91723,
+    "lon": 74.85603
+  },
+  "Manipal": {
+    "model": "karwar",
+    "lat": 13.35,
+    "lon": 74.78333
+  },
+  "Manvi": {
+    "model": "bengaluru",
+    "lat": 15.99126,
+    "lon": 77.05034
+  },
+  "Mayakonda": {
+    "model": "hassan",
+    "lat": 14.28894,
+    "lon": 76.08305
+  },
+  "Melukote": {
+    "model": "hassan",
+    "lat": 12.66258,
+    "lon": 76.64861
+  },
+  "Mudbidri": {
+    "model": "hassan",
+    "lat": 13.06653,
+    "lon": 74.99525
+  },
+  "Muddebihal": {
+    "model": "hassan",
+    "lat": 16.33782,
+    "lon": 76.13173
+  },
+  "Mudgal": {
+    "model": "hassan",
+    "lat": 16.01191,
+    "lon": 76.44203
+  },
+  "Mudgere": {
+    "model": "hassan",
+    "lat": 13.13353,
+    "lon": 75.6416
+  },
+  "Mudhol": {
+    "model": "karwar",
+    "lat": 16.33354,
+    "lon": 75.28305
+  },
+  "Mulbagal": {
+    "model": "bengaluru",
+    "lat": 13.16352,
+    "lon": 78.39346
+  },
+  "Mulgund": {
+    "model": "karwar",
+    "lat": 15.2807,
+    "lon": 75.52132
+  },
+  "Mulki": {
+    "model": "hassan",
+    "lat": 13.09101,
+    "lon": 74.79353
+  },
+  "Mundargi": {
+    "model": "hassan",
+    "lat": 15.20677,
+    "lon": 75.8839
+  },
+  "Mundgod": {
+    "model": "karwar",
+    "lat": 14.97144,
+    "lon": 75.03658
+  },
+  "Munirabad": {
+    "model": "hassan",
+    "lat": 15.30928,
+    "lon": 76.3383
+  },
+  "Murudeshwara": {
+    "model": "karwar",
+    "lat": 14.0943,
+    "lon": 74.4845
+  },
+  "Mysuru": {
+    "model": "hassan",
+    "lat": 12.23,
+    "lon": 76.42
+  },
+  "Nagamangala": {
+    "model": "hassan",
+    "lat": 12.81939,
+    "lon": 76.75456
+  },
+  "Nanjangud": {
+    "model": "hassan",
+    "lat": 12.11764,
+    "lon": 76.68397
+  },
+  "Narasimharajapura": {
+    "model": "hassan",
+    "lat": 13.61075,
+    "lon": 75.512
+  },
+  "Naregal": {
+    "model": "hassan",
+    "lat": 15.57316,
+    "lon": 75.80805
+  },
+  "Nargund": {
+    "model": "karwar",
+    "lat": 15.72299,
+    "lon": 75.38666
+  },
+  "Navalgund": {
+    "model": "karwar",
+    "lat": 15.55877,
+    "lon": 75.35305
+  },
+  "Nelamangala": {
+    "model": "bengaluru",
+    "lat": 13.09978,
+    "lon": 77.39364
+  },
+  "Nyamti": {
+    "model": "hassan",
+    "lat": 14.14869,
+    "lon": 75.57641
+  },
+  "Pangala": {
+    "model": "karwar",
+    "lat": 13.25,
+    "lon": 74.75
+  },
+  "Pavugada": {
+    "model": "bengaluru",
+    "lat": 14.09953,
+    "lon": 77.28018
+  },
+  "Piriyapatna": {
+    "model": "hassan",
+    "lat": 12.33497,
+    "lon": 76.10073
+  },
+  "Ponnampet": {
+    "model": "hassan",
+    "lat": 12.14473,
+    "lon": 75.94514
+  },
+  "Puttur": {
+    "model": "hassan",
+    "lat": 12.75975,
+    "lon": 75.20169
+  },
+  "Rabkavi": {
+    "model": "karwar",
+    "lat": 16.47567,
+    "lon": 75.1106
+  },
+  "Raichur": {
+    "model": "bengaluru",
+    "lat": 16.16,
+    "lon": 76.91
+  },
+  "Ramanagara": {
+    "model": "bengaluru",
+    "lat": 12.65,
+    "lon": 77.35
+  },
+  "Ranibennur": {
+    "model": "hassan",
+    "lat": 14.62239,
+    "lon": 75.62951
+  },
+  "Raybag": {
+    "model": "karwar",
+    "lat": 16.49178,
+    "lon": 74.77391
+  },
+  "Robertsonpet": {
+    "model": "bengaluru",
+    "lat": 12.95629,
+    "lon": 78.27539
+  },
+  "Ron": {
+    "model": "karwar",
+    "lat": 15.69935,
+    "lon": 75.73408
+  },
+  "Sadalgi": {
+    "model": "karwar",
+    "lat": 16.5587,
+    "lon": 74.53211
+  },
+  "Sagar": {
+    "model": "karwar",
+    "lat": 14.16498,
+    "lon": 75.02901
+  },
+  "Sakleshpur": {
+    "model": "hassan",
+    "lat": 12.94119,
+    "lon": 75.78467
+  },
+  "Sandur": {
+    "model": "hassan",
+    "lat": 15.08613,
+    "lon": 76.54692
+  },
+  "Sanivarsante": {
+    "model": "hassan",
+    "lat": 12.72824,
+    "lon": 75.88669
+  },
+  "Sankeshwar": {
+    "model": "karwar",
+    "lat": 16.25649,
+    "lon": 74.48195
+  },
+  "Sargur": {
+    "model": "hassan",
+    "lat": 11.99971,
+    "lon": 76.39611
+  },
+  "Saundatti": {
+    "model": "karwar",
+    "lat": 15.76615,
+    "lon": 75.11778
+  },
+  "Savanur": {
+    "model": "karwar",
+    "lat": 14.97335,
+    "lon": 75.33724
+  },
+  "Seram": {
+    "model": "bengaluru",
+    "lat": 17.17859,
+    "lon": 77.28998
+  },
+  "Shahabad": {
+    "model": "bengaluru",
+    "lat": 17.1307,
+    "lon": 76.94361
+  },
+  "Shahpur": {
+    "model": "hassan",
+    "lat": 16.69605,
+    "lon": 76.8422
+  },
+  "Shiggaon": {
+    "model": "karwar",
+    "lat": 14.99053,
+    "lon": 75.22499
+  },
+  "Shikarpur": {
+    "model": "hassan",
+    "lat": 14.2698,
+    "lon": 75.35643
+  },
+  "Shimoga": {
+    "model": "karwar",
+    "lat": 14.05,
+    "lon": 75.16
+  },
+  "Shirhatti": {
+    "model": "karwar",
+    "lat": 15.23352,
+    "lon": 75.57996
+  },
+  "Shorapur": {
+    "model": "hassan",
+    "lat": 16.521,
+    "lon": 76.75738
+  },
+  "Shrirangapattana": {
+    "model": "hassan",
+    "lat": 12.42264,
+    "lon": 76.68439
+  },
+  "Siddapur": {
+    "model": "karwar",
+    "lat": 14.34322,
+    "lon": 74.894
+  },
+  "Sidlaghatta": {
+    "model": "bengaluru",
+    "lat": 13.38896,
+    "lon": 77.86444
+  },
+  "Sindgi": {
+    "model": "hassan",
+    "lat": 16.91883,
+    "lon": 76.23368
+  },
+  "Sindhnur": {
+    "model": "hassan",
+    "lat": 15.76983,
+    "lon": 76.75581
+  },
+  "Sira": {
+    "model": "bengaluru",
+    "lat": 13.74155,
+    "lon": 76.9043
+  },
+  "Sirsi": {
+    "model": "karwar",
+    "lat": 14.62072,
+    "lon": 74.83554
+  },
+  "Siruguppa": {
+    "model": "bengaluru",
+    "lat": 15.63,
+    "lon": 76.89217
+  },
+  "Someshwar": {
+    "model": "hassan",
+    "lat": 13.49112,
+    "lon": 75.06646
+  },
+  "Somvarpet": {
+    "model": "hassan",
+    "lat": 12.59698,
+    "lon": 75.84957
+  },
+  "Sorab": {
+    "model": "karwar",
+    "lat": 14.38144,
+    "lon": 75.09183
+  },
+  "Sravana": {
+    "model": "hassan",
+    "lat": 12.85737,
+    "lon": 76.48886
+  },
+  "Sringeri": {
+    "model": "hassan",
+    "lat": 13.41698,
+    "lon": 75.25271
+  },
+  "Srinivaspur": {
+    "model": "bengaluru",
+    "lat": 13.33914,
+    "lon": 78.21175
+  },
+  "Sulya": {
+    "model": "hassan",
+    "lat": 12.561,
+    "lon": 75.38741
+  },
+  "Suntikoppa": {
+    "model": "hassan",
+    "lat": 12.45594,
+    "lon": 75.8297
+  },
+  "Talikota": {
+    "model": "hassan",
+    "lat": 16.47311,
+    "lon": 76.31085
+  },
+  "Tarikere": {
+    "model": "hassan",
+    "lat": 13.70954,
+    "lon": 75.81382
+  },
+  "Tekkalakote": {
+    "model": "hassan",
+    "lat": 15.53444,
+    "lon": 76.87703
+  },
+  "Terdal": {
+    "model": "karwar",
+    "lat": 16.49379,
+    "lon": 75.04667
+  },
+  "Tiptur": {
+    "model": "hassan",
+    "lat": 13.2563,
+    "lon": 76.47768
+  },
+  "Tirthahalli": {
+    "model": "hassan",
+    "lat": 13.68835,
+    "lon": 75.24548
+  },
+  "Tirumakudal": {
+    "model": "bengaluru",
+    "lat": 12.21207,
+    "lon": 76.9018
+  },
+  "Tumakuru": {
+    "model": "bengaluru",
+    "lat": 13.5,
+    "lon": 77.0
+  },
+  "Turuvekere": {
+    "model": "hassan",
+    "lat": 13.16374,
+    "lon": 76.66641
+  },
+  "Udupi": {
+    "model": "karwar",
+    "lat": 13.5,
+    "lon": 74.87
+  },
+  "Ullal": {
+    "model": "hassan",
+    "lat": 12.80569,
+    "lon": 74.86058
+  },
+  "Uttar": {
+    "model": "karwar",
+    "lat": 14.88333,
+    "lon": 74.58333
+  },
+  "Vadigenhalli": {
+    "model": "bengaluru",
+    "lat": 13.29724,
+    "lon": 77.80184
+  },
+  "Vijayapura": {
+    "model": "karwar",
+    "lat": 16.82442,
+    "lon": 75.71537
+  },
+  "Virarajendrapet": {
+    "model": "hassan",
+    "lat": 12.19644,
+    "lon": 75.80512
+  },
+  "Wadi": {
+    "model": "bengaluru",
+    "lat": 17.05183,
+    "lon": 76.99048
+  },
+  "Yadgir": {
+    "model": "bengaluru",
+    "lat": 16.73,
+    "lon": 76.94
+  },
+  "Yelahanka": {
+    "model": "bengaluru",
+    "lat": 13.10073,
+    "lon": 77.59632
+  },
+  "Yelandur": {
+    "model": "bengaluru",
+    "lat": 12.04629,
+    "lon": 77.03034
+  },
+  "Yelbarga": {
+    "model": "hassan",
+    "lat": 15.61545,
+    "lon": 76.01184
+  },
+  "Yellapur": {
+    "model": "karwar",
+    "lat": 14.9637,
+    "lon": 74.70929
+  }
+}

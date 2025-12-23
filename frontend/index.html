@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolArc - Renewable Energy Forecasting</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="el"></div>
+    </div>
+
+    <!-- Stars Background -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <!-- Solcast Logo -->
+    <div class="solcast-logo">
+        <img src="solcast-logo.png" alt="Solcast" onerror="this.style.display='none'">
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-title-container">
+            <svg class="title-svg-main" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" 
+                      class="svg-text" fill="none" stroke="url(#text-gradient)" stroke-width="6">
+                    SolArc
+                </text>
+            </svg>
+        </div>
+        
+        <div class="hero-subtitle">
+            <h2 class="subtitle-main">Harness the Arc: SolArc Forecasts Wind & Solar,</h2>
+            <h2 class="subtitle-secondary">Fueling India's Net-Zero Tomorrow</h2>
+        </div>
+
+        <!-- Navigation Links Below Subtitle -->
+        <div class="hero-nav-links">
+            <a href="about.html" class="hero-link">About</a>
+            <a href="how-it-works.html" class="hero-link">How it works</a>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image">
+            <img src="renewable-energy.jpg" alt="Solar and Wind Energy" onerror="this.parentElement.style.display='none'">
+        </div>
+    </section>
+
+    <!-- Feature Icon Strip -->
+    <section class="icon-strip-section">
+        <div class="scroll-container">
+            <div class="icon-strip-wrapper">
+                <!-- First Row: 4 cards -->
+                <div class="icon-strip-row">
+                    <div class="square feature-card">
+                        <div class="card-content">
+                            <h3>240+ Cities Across Karnataka</h3>
+                            <p>High-resolution coverage for every major hub and town.</p>
+                        </div>
+                    </div>
+                    <div class="square feature-card">
+                        <div class="card-content">
+                            <h3>Multi-Model Forecasting</h3>
+                            <p>Region-optimized ML models for coastal, central, and urban climates.</p>
+                        </div>
+                    </div>
+                    <div class="square feature-card">
+                        <div class="card-content">
+                            <h3>Solar & Wind Synergy</h3>
+                            <p>Combines irradiance, temperature, and wind speed to optimize hybrid plants.</p>
+                        </div>
+                    </div>
+                    <div class="square feature-card">
+                        <div class="card-content">
+                            <h3>Grid-Ready Insights</h3>
+                            <p>Energy metrics engineered for scheduling, dispatch, and net-load planning.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animated Spacer -->
+                <div class="card-spacer-horizontal"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powerful Features Section -->
+    <section class="powerful-features-section">
+        <h2 class="features-heading">
+            <p>Powerful Features</p>
+        </h2>
+        
+        <div class="features-grid">
+            <div class="feature-detail-card">
+                <h3>City-wise Model Assignment</h3>
+                <p>Each of our 242 cities across Karnataka is intelligently mapped to one of three specialized models—Karwar (coastal), Hassan (central), or Bengaluru (urban)—based on climate proximity and geographic characteristics.</p>
+            </div>
+            
+            <div class="feature-detail-card">
+                <h3>Live Weather Integration</h3>
+                <p>Seamlessly integrated with Open-Meteo's high-resolution weather API, SolArc fetches real-time data including POA direct irradiance, POA diffuse irradiance, ground-reflected radiation, ambient temperature, and wind speed.</p>
+            </div>
+            
+            <div class="feature-detail-card">
+                <h3>Time-Aware Forecasting</h3>
+                <p>Choose your forecasting horizon: Realtime mode delivers instant energy predictions, 7-day mode provides a week-long outlook, and Monthly mode offers 30-day aggregated insights for long-term planning.</p>
+            </div>
+            
+            <div class="feature-detail-card">
+                <h3>Explainable Outputs</h3>
+                <p>Receive transparent, actionable metrics including energy per square meter (kWh/m²), total energy output (kWh), and comprehensive weather diagnostics with full context.</p>
+            </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="cta-container">
+            <button class="cta-button" id="startPredictingBtn">Start Predicting</button>
+        </div>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+</html>
